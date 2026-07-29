@@ -1,0 +1,689 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Requirements knowledge base of the seven-phase Double Materiality Assessment reference model. Each entry is a schema-validated binary predicate assigned to exactly one phase and anchored to the provision it derives from.",
+  "phase_count": 7,
+  "requirement_count": 33,
+  "phases": [
+    {
+      "id": "P1",
+      "name": "Governance mandate",
+      "description": "The administrative body fixes the reporting perimeter, allocates resources, designates a process owner and constitutes the cross-functional team.",
+      "regulatory_basis": "ESRS 2 GOV-1/2/5; CSRD Art. 33, 40c",
+      "requirement_ids": [
+        "REQ-P1-01",
+        "REQ-P1-02",
+        "REQ-P1-03"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Stakeholder engagement",
+      "description": "The sustainability team identifies and classifies relevant stakeholder categories, consults them and documents the views obtained.",
+      "regulatory_basis": "ESRS 2 SBM-2; ESRS 1 §3.4; EFRAG IG 1",
+      "requirement_ids": [
+        "REQ-P2-01",
+        "REQ-P2-02",
+        "REQ-P2-03",
+        "REQ-P2-04"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Impact materiality (inside-out)",
+      "description": "Actual and potential impacts on people and the environment along the value chain are identified and scored on scale, scope and irremediable character, adding likelihood for potential impacts.",
+      "regulatory_basis": "ESRS 1 §3.4, ch. 5; ESRS 2 IRO-1, SBM-3",
+      "requirement_ids": [
+        "REQ-P3-01",
+        "REQ-P3-02",
+        "REQ-P3-03",
+        "REQ-P3-04",
+        "REQ-P3-05"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "Financial materiality (outside-in)",
+      "description": "Risks and opportunities are scored by likelihood and magnitude of financial effect over defined time horizons, conducted with the risk and finance functions.",
+      "regulatory_basis": "ESRS 1 §3.5, ch. 6.4; EFRAG IG 1",
+      "requirement_ids": [
+        "REQ-P4-01",
+        "REQ-P4-02",
+        "REQ-P4-03",
+        "REQ-P4-04"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "Indicator collection",
+      "description": "Each material matter is mapped onto the applicable disclosure requirements and datapoints; data is then collected, validated and documented.",
+      "regulatory_basis": "ESRS 2 IRO-2; topical ESRS; EFRAG IG 3",
+      "requirement_ids": [
+        "REQ-P5-01",
+        "REQ-P5-02",
+        "REQ-P5-03",
+        "REQ-P5-04",
+        "REQ-P5-05",
+        "REQ-P5-06"
+      ]
+    },
+    {
+      "id": "P6",
+      "name": "External assurance",
+      "description": "The draft statement is submitted to external assurance; a negative outcome returns the process to the preceding phases.",
+      "regulatory_basis": "CSRD Art. 34, 28a; ESRS 2 GOV-5",
+      "requirement_ids": [
+        "REQ-P6-01",
+        "REQ-P6-02",
+        "REQ-P6-03",
+        "REQ-P6-04",
+        "REQ-P6-05"
+      ]
+    },
+    {
+      "id": "P7",
+      "name": "Final disclosure",
+      "description": "Board approval, publication in the management report, digital tagging and filing; feeds back into the following cycle.",
+      "regulatory_basis": "ESRS 1 ch. 7, 9; ESRS 2 BP-1/2; ESEF Reg.",
+      "requirement_ids": [
+        "REQ-P7-01",
+        "REQ-P7-02",
+        "REQ-P7-03",
+        "REQ-P7-04",
+        "REQ-P7-05",
+        "REQ-P7-06"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ-P1-01",
+      "phase": "P1",
+      "predicate": "administrative_body_oversees_sustainability",
+      "requirement": "The report describes the role of the administrative/management/supervisory body (or highest governance body) in steering and overseeing sustainability matters, including its oversight of the processes used to identify and manage the company's impacts and of the related strategy, policies and targets",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "CSRD"
+      ],
+      "anchors": [
+        "CSRD Art 33(1)"
+      ]
+    },
+    {
+      "id": "REQ-P1-02",
+      "phase": "P1",
+      "predicate": "reporting_perimeter_aligned_with_financial_statements",
+      "requirement": "The report defines the scope of the sustainability statement so that it covers the same reporting entity/consolidation perimeter as the financial statements",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "ESRS 1, section 5.1 (Reporting undertaking and value chain)",
+        "ESRS 1 paragraph 62"
+      ]
+    },
+    {
+      "id": "REQ-P1-03",
+      "phase": "P1",
+      "predicate": "responsibility_for_report_preparation",
+      "requirement": "The report makes explicit that the members of the administrative, management and supervisory bodies hold collective responsibility for the sustainability information being drawn up and published in accordance with the applicable requirements",
+      "gate": "presence",
+      "deontic": "obligation",
+      "instruments": [
+        "CSRD"
+      ],
+      "anchors": [
+        "CSRD Art 40c"
+      ]
+    },
+    {
+      "id": "REQ-P2-01",
+      "phase": "P2",
+      "predicate": "consults_stakeholders",
+      "requirement": "The report describes that relevant stakeholders (including affected stakeholders and workers' representatives) were actually engaged or consulted, with the purpose and means of the engagement made explicit",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 1, section 3.4 (impact materiality, three steps)",
+        "CSRD Art 19a(5)",
+        "CSRD Art 29a(6)"
+      ]
+    },
+    {
+      "id": "REQ-P2-02",
+      "phase": "P2",
+      "predicate": "identifies_and_classifies_stakeholders",
+      "requirement": "The report identifies and classifies the relevant stakeholder categories (e.g. workers, communities, customers, suppliers, investors) and explains how they were selected as relevant to the business",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS (phase-level)"
+      ],
+      "anchors": [
+        "ESRS 2 SBM-2; ESRS 1 §3.4; EFRAG IG 1"
+      ]
+    },
+    {
+      "id": "REQ-P2-03",
+      "phase": "P2",
+      "predicate": "integrates_stakeholder_views_in_materiality",
+      "requirement": "The report shows that the outcomes of stakeholder engagement fed into identifying impacts and determining the material sustainability topics",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1"
+      ],
+      "anchors": [
+        "ESRS 1, section 3.4 (impact materiality, three steps)"
+      ]
+    },
+    {
+      "id": "REQ-P2-04",
+      "phase": "P2",
+      "predicate": "stakeholder_views_inform_strategy_and_governance",
+      "requirement": "The report explains how stakeholder interests and views are taken into account in the business model and strategy, and are conveyed to the administrative, management or supervisory bodies",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "CSRD"
+      ],
+      "anchors": [
+        "CSRD Art 19a(2)(a)(iv)",
+        "CSRD Art 29a(2)(a)(iv)",
+        "CSRD Art 19a(5)",
+        "CSRD Art 29a(6)"
+      ]
+    },
+    {
+      "id": "REQ-P3-01",
+      "phase": "P3",
+      "predicate": "applies_impact_materiality_thresholds",
+      "requirement": "The report explains the criteria and thresholds (qualitative and/or quantitative) used to decide which impacts are material and therefore covered in the sustainability disclosures",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "ESRS 1, section 3.4 (impact materiality thresholds)",
+        "ESRS 1 §3 impact materiality; ESRS 2 IRO-1 (p.25)",
+        "ESRS 2 paragraph 59",
+        "ESRS 1 paragraph 42 and Chapter 3.4"
+      ]
+    },
+    {
+      "id": "REQ-P3-02",
+      "phase": "P3",
+      "predicate": "covers_value_chain_in_impact_assessment",
+      "requirement": "The report extends the impact assessment to material impacts connected with the upstream and downstream value chain and business relationships, not only the organization's own operations",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "CSRD",
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "ESRS 1, chapter 5 (value chain)",
+        "ESRS 1, chapter 5 (value chain), paragraph 63",
+        "ESRS 1, value chain (§ on value chain information)",
+        "ESRS 1, value chain / materiality assessment",
+        "CSRD Art 19a(3)"
+      ]
+    },
+    {
+      "id": "REQ-P3-03",
+      "phase": "P3",
+      "predicate": "describes_impact_materiality_process",
+      "requirement": "The report describes the process used to identify and assess the organization's actual and potential, negative and positive impacts on people and the environment, across its own activities and business relationships",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "EFRAG IG 1",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 1, sec 3.1 value chain",
+        "ESRS 1, section 3.4 (impact materiality, three steps)",
+        "ESRS 1 §3 impact materiality; ESRS 2 IRO-1 (p.25)",
+        "ESRS 1 paragraph AR16",
+        "CSRD Art 19a"
+      ]
+    },
+    {
+      "id": "REQ-P3-04",
+      "phase": "P3",
+      "predicate": "discloses_material_impacts_outcome",
+      "requirement": "The report presents the outcome of the impact materiality assessment, including the resulting list of material topics/impacts (with changes versus the prior period) and, where relevant, the conclusion that a matter is not material",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1"
+      ],
+      "anchors": [
+        "ESRS 2, IRO-2",
+        "ESRS 1, section 3.6, para 107 (ESRS 2 IRO-1)",
+        "ESRS 1 (32)"
+      ]
+    },
+    {
+      "id": "REQ-P3-05",
+      "phase": "P3",
+      "predicate": "scores_impact_severity_and_likelihood",
+      "requirement": "The report shows that impacts are assessed by their severity (scale, scope, irremediability) and likelihood of occurrence, distinguishing the relevant time horizon, to prioritize them",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "EFRAG IG 1, p.23",
+        "EFRAG IG1, p.38"
+      ]
+    },
+    {
+      "id": "REQ-P4-01",
+      "phase": "P4",
+      "predicate": "assesses_financial_effects_over_time_horizons",
+      "requirement": "The report describes the financial effects of the material risks and opportunities across short-, medium- and long-term time horizons",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "EFRAG IG 1",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 1, section 3.5 (financial materiality), para 106",
+        "ESRS 1, section 3.5 financial materiality",
+        "ESRS 1, paragraph AR 15",
+        "EFRAG IG1, p.33",
+        "CSRD Art 19a(2)"
+      ]
+    },
+    {
+      "id": "REQ-P4-02",
+      "phase": "P4",
+      "predicate": "defines_assessment_time_horizons",
+      "requirement": "The report defines the short-, medium- and long-term time horizons used for the assessment, measured from the end of the reporting period",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2"
+      ],
+      "anchors": [
+        "ESRS 1, section 6.4 (Time horizons)",
+        "ESRS 1, time horizons (OJ L 2023/2772, p.15)"
+      ]
+    },
+    {
+      "id": "REQ-P4-03",
+      "phase": "P4",
+      "predicate": "identifies_sustainability_risks_and_opportunities",
+      "requirement": "The report identifies the sustainability-related risks and opportunities that could have financial effects on the undertaking, including those stemming from its dependencies on natural, human and social resources and from its sustainability impacts",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "EFRAG IG 1",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 1, sec 3.5 financial materiality",
+        "ESRS 1, chapter 3 (financial materiality / opportunities)",
+        "ESRS 1, section 3.5 (financial materiality)",
+        "ESRS 1, financial materiality of opportunities",
+        "ESRS 1, financial materiality assessment of opportunities"
+      ]
+    },
+    {
+      "id": "REQ-P4-04",
+      "phase": "P4",
+      "predicate": "scores_financial_materiality_by_likelihood_and_magnitude",
+      "requirement": "The report shows that each risk and opportunity is assessed by combining its likelihood of occurrence and the potential magnitude of its financial effects against defined thresholds, and states which ones are concluded to be financially material",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "ESRS 1, p.15",
+        "ESRS 1, section 3.5 (financial materiality determination)",
+        "ESRS 1, section 3.5 (financial materiality), para 105",
+        "ESRS 1, section 3.5 financial materiality",
+        "ESRS 1, paragraph AR 15"
+      ]
+    },
+    {
+      "id": "REQ-P5-01",
+      "phase": "P5",
+      "predicate": "collects_and_validates_indicator_data",
+      "requirement": "The report describes how the reported data were collected and validated, including coverage of the whole group and of the upstream/downstream value chain, and use of estimates or proxies where primary data were not available",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "CSRD",
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "ESRS 1, chapter 5 (value chain), section 7.2",
+        "ESRS 1, chapter 5 (value chain)",
+        "ESRS 1, chapter 5 (value chain), para 110",
+        "ESRS 1, estimation of value chain information",
+        "ESRS 1, §7.2 sources of estimation and outcome uncertainty"
+      ]
+    },
+    {
+      "id": "REQ-P5-02",
+      "phase": "P5",
+      "predicate": "disaggregates_reported_information",
+      "requirement": "Where aggregation would obscure material information, the report breaks down the reported figures (e.g. by country, significant site or significant asset) consistently with the basis used in the materiality assessment, and does not aggregate items of different nature",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "ESRS 1, para 110",
+        "ESRS 1, para 111",
+        "ESRS 1, para 112",
+        "ESRS 1, para 113",
+        "ESRS 1, paragraph 54"
+      ]
+    },
+    {
+      "id": "REQ-P5-03",
+      "phase": "P5",
+      "predicate": "discloses_comparative_and_restated_data",
+      "requirement": "The report presents prior-period comparatives for the reported metrics and, where figures or estimates have been revised, explains the restatement (previous vs revised value and the reason), or states when adjustment is impracticable",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2"
+      ],
+      "anchors": [
+        "ESRS 1, p.14",
+        "ESRS 1, p.15",
+        "ESRS 1, comparative information (OJ L 2023/2772, p.16)",
+        "ESRS 1, post period-end events (OJ L 2023/2772, p.17)"
+      ]
+    },
+    {
+      "id": "REQ-P5-04",
+      "phase": "P5",
+      "predicate": "discloses_material_topic_metrics",
+      "requirement": "For each material topic the report presents the prescribed metrics and indicators (with the actual figures for the period), or explicitly states why a required metric is not disclosed (topic not material, or policy/action/target not in place)",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2"
+      ],
+      "anchors": [
+        "ESRS 2, IRO-2 / topical ESRS (MDR-P/A/T)",
+        "ESRS 1, para 134",
+        "ESRS 1, para 135(a)",
+        "ESRS 1, para 136",
+        "ESRS 1, section 5 / consolidated reporting"
+      ]
+    },
+    {
+      "id": "REQ-P5-05",
+      "phase": "P5",
+      "predicate": "documents_metric_methodology_and_uncertainty",
+      "requirement": "The report documents the methodologies, definitions and assumptions used to compute the metrics, the most significant measurement/estimation uncertainties, and the consistency of the data and assumptions with the financial statements",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2"
+      ],
+      "anchors": [
+        "ESRS 1, p.14",
+        "ESRS 1, p.15",
+        "ESRS 1, sources of estimation uncertainty (OJ L 2023/2772, p.16)",
+        "ESRS 1, data and assumptions (OJ L 2023/2772, p.16)",
+        "ESRS 1, consistency of metrics (OJ L 2023/2772, p.17)"
+      ]
+    },
+    {
+      "id": "REQ-P5-06",
+      "phase": "P5",
+      "predicate": "maps_datapoints_to_material_topics",
+      "requirement": "The report links each material sustainability topic to the specific disclosure requirements and quantitative datapoints/KPIs that apply to it, so the reader can see which metrics are reported for which topic (e.g. via an index, mapping table, or topic-by-topic structure)",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "CSRD",
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "ESRS 2, IRO-1",
+        "ESRS 2, IRO-2 / topical ESRS",
+        "ESRS 1, section 3.6, para 108 (ESRS 2 IRO-1/IRO-2)",
+        "ESRS 1 (30(b))",
+        "ESRS 1, entity-specific disclosures (p.24)"
+      ]
+    },
+    {
+      "id": "REQ-P6-01",
+      "phase": "P6",
+      "predicate": "assurance_provider_is_independent",
+      "requirement": "The assurance provider is shown to be independent and bound by professional ethics requirements (independence/objectivity confirmed, prohibited non-audit services avoided)",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "CSRD"
+      ],
+      "anchors": [
+        "CSRD Art 34, Directive 2006/43/EC Art 39(6)(e)",
+        "CSRD Art 25b",
+        "CSRD Art 25c"
+      ]
+    },
+    {
+      "id": "REQ-P6-02",
+      "phase": "P6",
+      "predicate": "describes_assurance_approach",
+      "requirement": "The report describes its policy and practice for obtaining external assurance, including the involvement of the governance body in the assurance process",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1"
+      ],
+      "anchors": [
+        "ESRS 1, Appendix B (qualitative characteristics), para 119"
+      ]
+    },
+    {
+      "id": "REQ-P6-03",
+      "phase": "P6",
+      "predicate": "discloses_assurance_scope_and_level",
+      "requirement": "The assurance report states what has been assured (subject matter and reporting framework), the assurance standard applied and the assurance level obtained (limited or reasonable)",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "CSRD"
+      ],
+      "anchors": [
+        "CSRD Art 28a(1); Art 26a(2)-(3)",
+        "CSRD Art 28a(1); Dir 2013/34/EU Art 34(1) point (aa)",
+        "CSRD Art 28a(1)",
+        "CSRD Art 28a / Directive 2013/34/EU as amended by 2022/2464"
+      ]
+    },
+    {
+      "id": "REQ-P6-04",
+      "phase": "P6",
+      "predicate": "documents_assurance_engagement",
+      "requirement": "The assurance engagement is supported by a retained assurance file/working documentation evidencing how the assurance was carried out",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "CSRD"
+      ],
+      "anchors": [
+        "CSRD Art 24a",
+        "CSRD Art 24a(2a)",
+        "CSRD Art 24b"
+      ]
+    },
+    {
+      "id": "REQ-P6-05",
+      "phase": "P6",
+      "predicate": "has_external_assurance",
+      "requirement": "The report is accompanied by an external assurance opinion on the sustainability/non-financial statement, issued by an independent assurance provider (auditor/firm) and published together with the report",
+      "gate": "presence",
+      "deontic": "obligation",
+      "instruments": [
+        "CSRD"
+      ],
+      "anchors": [
+        "CSRD Art 30(1), Art 34(1)(aa)",
+        "CSRD Art 34",
+        "CSRD Art 40a(2)",
+        "CSRD Art 19a (amending Directive 2013/34/EU Art 34(1) point (aa) and Art 34(2)-(5))",
+        "CSRD (amending Directive 2006/43/EC Art 28a)"
+      ]
+    },
+    {
+      "id": "REQ-P7-01",
+      "phase": "P7",
+      "predicate": "applies_digital_tagging",
+      "requirement": "The sustainability information is prepared in a machine-readable digital format (e.g. ESEF/XBRL tagging) in addition to a human-readable presentation",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 1, chapter 7 (presentation)",
+        "CSRD Art 29d(1)",
+        "CSRD Art 29d(2)"
+      ]
+    },
+    {
+      "id": "REQ-P7-02",
+      "phase": "P7",
+      "predicate": "approved_and_assured_disclosure",
+      "requirement": "The report is approved/agreed by the administrative, management or supervisory body and is published together with the external auditor/assurance opinion on the sustainability (or non-financial) information",
+      "gate": "presence",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 2",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 2, QC verifiability",
+        "CSRD Art 33(1)",
+        "CSRD Art 30(1)",
+        "CSRD Art 40d(1)",
+        "CSRD Art 40d(2)"
+      ]
+    },
+    {
+      "id": "REQ-P7-03",
+      "phase": "P7",
+      "predicate": "links_to_financial_statements",
+      "requirement": "The report connects its sustainability information to the financial statements, with cross-references and explanations of how reported amounts/datapoints relate to amounts in the financial statements",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 1, chapter 7 (Connectivity), p.19",
+        "ESRS 1, chapter 9 (connectivity with financial statements)",
+        "ESRS 2 connectivity requirements, p.20",
+        "ESRS 2 connectivity requirements, p.21",
+        "ESRS 2 connectivity with financial statements, p.21"
+      ]
+    },
+    {
+      "id": "REQ-P7-04",
+      "phase": "P7",
+      "predicate": "published_in_management_report",
+      "requirement": "The sustainability/non-financial information is presented inside the (consolidated) management report, in a clearly identifiable dedicated section distinct from the rest of the report",
+      "gate": "presence",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 1, chapter 7 (presentation)",
+        "ESRS 1, chapter 7 (location in management report)",
+        "ESRS 1 chapter 7 (dedicated section of the management report)",
+        "CSRD Art 19a",
+        "CSRD Art 19a(1)"
+      ]
+    },
+    {
+      "id": "REQ-P7-05",
+      "phase": "P7",
+      "predicate": "states_basis_for_preparation",
+      "requirement": "The report states the standards/frameworks applied and the basis on which it was prepared (e.g. accordance with ESRS, or the frameworks relied upon and comply-or-explain where a policy is absent), with reporting period and scope of consolidation",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "CSRD"
+      ],
+      "anchors": [
+        "ESRS 1, section 6.1 (Reporting period)",
+        "ESRS 2 BP-1/BP-2 basis for preparation, p.21",
+        "CSRD Art 29a(5)",
+        "CSRD Art 40a(2)",
+        "CSRD Art 29a"
+      ]
+    },
+    {
+      "id": "REQ-P7-06",
+      "phase": "P7",
+      "predicate": "structures_report_contents",
+      "requirement": "The report follows a coherent, navigable structure for its sustainability content (e.g. ESG sections, taxonomy/topic disclosures separately identifiable, or a content index), so a reader can locate each required disclosure",
+      "gate": "content",
+      "deontic": "obligation",
+      "instruments": [
+        "ESRS 1",
+        "ESRS 2",
+        "EFRAG IG 1"
+      ],
+      "anchors": [
+        "ESRS 1, chapter 7 (presentation)",
+        "ESRS 1, chapter 7 (Presentation), p.18",
+        "ESRS 1, section 8.2 / ESRS 2 presentation, p.19",
+        "ESRS 2 presentation requirements, p.19",
+        "ESRS 2 BP-2, paragraph 15"
+      ]
+    }
+  ]
+}
